@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Whiskers & Snouts</title>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Raleway|Merriweather|News+Cycle" rel="stylesheet">
+      <!-- FontAwesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+      <!-- Bootstrap css -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom stylesheet -->
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+		<header>
+			<div class="title"><h1>Whiskers & Snouts</h1></div>
+		</header>
+
+		<div id="container" class="container-fluid">
+			<main class="row">
+				<div class="col main-img">
+					<img src="img/main.png" align="right">
+				</div>
+				<div class="col col-info"> 
+					<div id="main-info">
+
+					<p>Your dog deserves the best.
+					Isn't it about time you gave it to them?  Whiskers & Snouts, because your best friend is worth it.
+					<br/><br/>
+
+					Book an appointment now.</p>
+					</div>
+				<div class="explore"><center><a href="#reservations">EXPLORE <br/><i class="fas fa-chevron-down"></i></a></center></div>
+				</div>
+
+			</main>
+		
+		<section id="reservations" class="row">
+			
+			<div class="col image">
+				<center><img src="img/ws-icon.png">
+				<br/><br/>
+				<blockquote>Costs reflected are estimates. For a more accurate quote, please call the shop to speak to a stylist.
+				</blockquote>
+				<button class="btn view-appts">View Appointments</button>
+			</center>
+			</div>
+			<div class="col copy">
+								<h1>Book an Appointment</h1>
+				<form id="book_appointment">
+					<input type="text" class="form-control" placeholder="Companion Name" id="petName"><br/>
+					<input type="email" class="form-control" placeholder="email" id="email"><br/>
+					<div class="form-group select-service">
+						<label for="selectServices">Select Service</label>
+						<table class="select-service" id="grooming-type">
+							<th colspan="3">Spa</th>
+							<tr>
+								<td>
+									<input class="form-check-input grooming-service" type="checkbox" name="groomingType" value="Luxe Groom" id="luxeGroom">
+								</td>
+								<td class="service">
+									<h1> Luxe Groom.  <i class="fas fa-question-circle"></i> </h1>
+
+									<div class="serviceDesc">
+										Includes an oxygen infused bath with all organic luxury line of shampoo, a deep conditioning treatment for a healthy coat, a full groom haircut to your specification including sanitary trim, anal expression. Brush and blow-dry, nail grind, nail trim, teeth cleaning, ear cleaning, paw moisturizer, and spritz of dog cologne.
+									</div>
+								</td>
+								<td>
+									starting at $85
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<input class="form-check-input grooming-service" type="checkbox" name="groomingType" value="Full Groom" id="fullGroom">
+								</td>
+								<td class="service">
+									<h1>Full Groom.  <i class="fas fa-question-circle"></i> </h1>
+
+									<div class="serviceDesc">
+										Includes an oxygen infused bath with an organinc line of 2-in-1 shampoo and conditioner, a full groom haircut, including sanitary trim, anal expression, brush and blow-dry, and nail grind.
+									</div>
+								</td>
+								<td>
+									starting at $55
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="form-check-input grooming-service" type="checkbox" name="groomingType" value="Cleanse & Trim" id="cleanseTrim">
+								</td>
+								<td class="service">
+									<h1> Cleanse & Trim  <i class="fas fa-question-circle"></i> </h1>
+
+									<div class="serviceDesc">
+										Includes an oxygen infused bath with organic shampoo, trimming of the face, paws, tail, and ears, a brush and blow-out with a spritz of cologne.
+									</div>
+								</td>
+								<td>
+									$30-$115
+								</td>
+							</tr>
+							<th colspan="3"> Add-On Services </th>
+							<tr>
+								<td>
+									<input class="form-check-input grooming-service" type="checkbox" name="groomingType" value="Pawdicure" id="pawdicure">
+								</td>
+								<td class="service">
+									<h1> Pawdicure <i class="fas fa-question-circle"></i> </h1>
+
+									<div class="serviceDesc">
+										A nail trim, nail grind, and ear cleaning along with a light trim of feet and pad shaving.  Followed up with a cologne spritz and a paw pad moisturizer.
+									</div>
+								</td>
+								<td>
+									$25
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="form-check-input grooming-service" type="checkbox" name="groomingType" value="Breath Freshener" id="breathFreshener">
+								</td>
+								<td class="service">
+									<h1> Breath Freshener.  <i class="fas fa-question-circle"></i> </h1>
+
+									<div class="serviceDesc">
+										A teeth cleaning with whitening and tartar control gel followed up with a minty breath freshener and a toothbrush to take home.
+									</div>
+								</td>
+								<td>
+									$10
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="form-check-input grooming-service" type="checkbox" name="groomingType" value="Anal Cleansing" id="analCleansing">
+								</td>
+								<td class="service">
+									<h1> Anal Cleansing.  <i class="fas fa-question-circle"></i> </h1>
+
+									<div class="serviceDesc">
+										Anal glands cleaned and sanitary area wiped.
+									</div>
+								</td>
+								<td>
+									$10
+								</td>
+							</tr>
+						</table>
+					</div>
+					<input type="date" class="form-control" id="date" placeholder="mm/dd"><br/>
+					<select class="form-control" id="time">
+						<option>10:00 am</option>
+						<option>12:00 pm</option>
+						<option>1:30 pm</option>
+						<option>3:30 pm</option>
+					</select>
+					<br/><br/>
+					<center><button class="btn submitAppt">Book Appointment</button></center>
+				</form>
+
+			<div id="confirmation" class="col">
+					Thank you!  Your Appointment is Confirmed.  Please review your 
+					appointment details below:
+				<ul class="appointments">
+				</ul>
+			</div>
+		</div>
+		</section>
+
+		<footer id="storeInfo" class="row">
+			<div class="col policy">
+				<h1>New Client Policy</h1>
+				Please note, all new clients will receive a consultation phone call to confirm the condition of the coat and size of dog.  We require a $25.00 deposit fee for new clients which goes toward the total cost of the appointment. <br/><br/>
+				<h1>Cancellation Policy</h1>
+				Please give 24hr notice of any changes to your appointment.  For new clients, failure to notify us will forfeit your deposit.  
+			</div>
+			<div class="col">
+				<div id="map">
+					
+				</div>
+			</div>
+			
+		
+
+	<!-- handlebars template -->
+	<script id="appointment-template" type="text/x-handlebars-template">
+	<li data-id="{{reservationId}}">
+							<table>
+								<tr>
+									<td>Companion Name</td>
+									<td>{{petName}}</td>
+								</tr>
+								<tr>
+									<td>Email</td>
+									<td>{{email}}</td>
+								</tr>
+								<tr>
+									<td>Services</td>
+									<td>{{groomingType}}</td>
+								</tr>
+								<tr>
+									<td>Date</td>
+									<td>{{date}}</td>
+								</tr>
+								<tr>
+									<td>Time</td>
+									<td>{{time}}</td>
+								</tr>
+							</table>
+
+
+						</li>
+					</script>
+
+
+
+	<!-- firebase -->
+	<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+	<!-- jQuery-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- handlebars -->
+    <script src="js/handlebars-v4.0.11.js"></script>
+    <!-- custom js -->
+    <script src="js/main.js"></script>
+    <!-- google maps -->
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp7dwQs2-jld_wocr5yie1oU717BkVQbE&callback=initMap"></script>
+	</body>
+</html>
